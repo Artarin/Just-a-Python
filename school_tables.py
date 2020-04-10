@@ -5,7 +5,8 @@
 #  Известно количество учащихся в каждом из трёх классов. Сколько всего 
 # нужно закупить парт чтобы их хватило на всех учеников? 
 # Программа получает на вход три натуральных числа: количество учащихся 
-# в каждом из трех классов. 
+#
+#  в каждом из трех классов. 
 a = int (input('how may children in the first classroom? '))
 b = int (input('how may children in the second classroom? '))
 c  = int (input('how may children in the fird classroom? '))
