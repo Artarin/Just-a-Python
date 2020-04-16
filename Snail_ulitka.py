@@ -5,7 +5,11 @@
 #, a, b
 #Программа должна вывести одно натуральное число. Гарантируется, что a>b
 from math import ceil
-h= 10#int(input)
-a= 3#int(input)
-b= 2#int(input)
-print (int(ceil(h-a)/(a-b)+1))
+h= 10#int(input())
+a= 3#int(input())
+b= 2#int(input())
+shag=a-b
+daymax= h/shag
+print (daymax)
+print (int(1+(h-a)/(a-b)))
+print (h-(a-b)*(h//(a-b)))
