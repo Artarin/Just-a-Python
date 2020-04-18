@@ -6,10 +6,15 @@
 #Программа должна вывести одно натуральное число. Гарантируется, что a>b
 from math import ceil
 h= 10#int(input())
-a= 3#int(input())
-b= 2#int(input())
-shag=a-b
-daymax= h/shag
-print (daymax)
-print (int(1+(h-a)/(a-b)))
-print (h-(a-b)*(h//(a-b)))
+a= 6#int(input())
+b= 0#int(input())
+# y - это лишние дни, которые надо вычесть из общей суммы дней h/(a-b) 
+# и в конце прибавить один день, за который улитка финиширует.
+y=a//(a-b)
+from math import ceil
+h= int(input())
+a= int(input())
+b= int(input())
+y=a/(a-b)
+
+print (ceil(h/(a-b)-y+1))
