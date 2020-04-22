@@ -1,9 +1,5 @@
-a= 10 #int(input())
-b= 2 #int(input())
-if a<b:
-    for i in range (a,b+1):
-        print (i)
-else:
-    for i in range (a,b-1,-1):
-        print (i)
+a= 12 #int(input())
+b= 16 #int(input())
+a=a%3
+print (a)
     
