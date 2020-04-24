@@ -1,5 +1,8 @@
-a= 12 #int(input())
-b= 16 #int(input())
-a=a%3
-print (a)
-    
+k=1
+n=0
+for i in range (1,(int(input())+1)):
+    k*=i
+    n+=k
+    print (i,'',k,'',n)
+
+print (k)
