@@ -1,10 +1,9 @@
-x='1+1=2'#input()
-l=str()
-print (x[:x.find('1')])
-print (x[x.find('1'):])
-
-for i in range(x.count('1')):
-    print (x[:x.find('1')])
-    l=(x[:x.find('1')])+'one'+(x[x.find('1')-1:])
-    print (l)   
-
+i=int(input())
+k=1
+l=0
+while k!=0:
+    if l<i:
+       l=i
+    k=i
+    i=int(input())
+print (l)
