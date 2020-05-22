@@ -1,23 +1,19 @@
-n = 8 # int(input())
-fMinusTwo = 0
-fMinusOne = 1
-for i in range (2,n):
-    f = fMinusOne+fMinusTwo
-    fMinusTwo = fMinusOne
-    fMinusOne = f
-    print (f)
+num1 = int(input())
+num2 = int(input())
+i = 1
+k = 1
+while num2 != 0 :
     
-if n == 0:
-    num = 0
-if n == 1:
-    num = 1
-print (num)
-
-k=1
-l=0
-while k!=0:
-    if l<i:
-       l=i
-    k=i
-    i=int(input())
-print (l)
+    #if num2 == 0:
+     #   break
+    if num1 == num2:
+        i += 1  
+        print (i)          
+    else:
+        if k < i:
+            k = i
+        i = 1
+    num1, num2 = num2, num1
+    num2 = int(input())
+ #   num1 = int(input())
+print (k)
