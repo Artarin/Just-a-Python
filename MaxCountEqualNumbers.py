@@ -1,4 +1,4 @@
-num1 = int(input())
+num1 = -1
 num2 = int(input())
 i = 1
 k = 1
