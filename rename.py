@@ -7,4 +7,4 @@ def rename(nam):
 
 print ('введите свое имя:')
 nam = input()
-rename(nam)
+rename(nam) 
