@@ -1,4 +1,4 @@
-n = 5 # int(input())
+n =  int(input())
 snow = [0]*n
 for i in range (n):
     snow [i] = ['.']*n
