@@ -1,10 +1,16 @@
-n = 5 # int(input())
-snow = [0]*n
-for i in range (n):
-    snow [i] = ['.']*n
-for i in range (n):
-    for j in range (n):
-        if (i + j) == (n-1) or i == j or i == (n//2) or j == (n//2):
-            snow[i][j] = '*'
-        print (snow[i][j], end =' ')
-    print()
+n = int(input())
+mass = set([i+1 for i in range (n)])
+print (mass)
+while True:
+    quesn= input()
+    if quesn == 'HELP':
+        break
+    elif quesn != 'NO' or quesn !='YES':
+        s = set([int(i) for i in quesn.split()])
+    elif quesn == 'NO':
+        mass = mass - s
+    
+mass = list(mass)
+mass.sort
+print (mass)
+        
