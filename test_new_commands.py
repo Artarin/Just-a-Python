@@ -1,5 +1,2 @@
-Capitals = {'Russia': 'Moscow', 'Ukraine': 'Kiev', 'USA': 'Washington'}
-Capitals = dict(Russia = 'Moscow', Ukraine = 'Kiev', USA = 'Washington')
-Capitals = dict([("Russia", "Moscow"), ("Ukraine", "Kiev"), ("USA", "Washington")])
-Capitals = dict(zip(["Russia", "Ukraine", "USA"], ["Moscow", "Kiev", "Washington"]))
-print(Capitals)
+i,j = input().split()
+print (i,j)
