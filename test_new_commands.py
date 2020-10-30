@@ -1,36 +1,15 @@
-class Money:
-    def __init__(self, d, c):
-        self.total_cents = d*100+c
-    
-    @property
-    def dollars (self):
-        return self.total_cents // 100
 
-    @property
-    def cents (self):
-        return self.total_cents % 100
+UserInfo = input('введите известные данные пользователя без пробелов: ')
+UserInversed = UserInfo.swapcase()
+UserInfo+=UserInversed
+UserInfo= ''.join(sorted(''.join(set(UserInfo))))
+print (UserInfo)
 
-    @dollars.setter
-    def dollars(self, value):
-        if isinstance (value, int) and value >= 0:
-            self.total_cents = value * 100 + self.cents
-        else: print ('Error dollars')
+FullAlphabet = '0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()'
+                
+print (set(FullAlphabet))
+Difference = ''.join(set (FullAlphabet) - set(UserInfo))
+print (Difference)
+Alphabet = UserInfo + ''.join(sorted(Difference))
+print (Alphabet)
 
-    
-    @cents.setter
-    def cents(self, value):
-        if isinstance (value, int) and 100 > value >= 0:
-            self.total_cents = self.dollars * 100 + value
-        else: print ('Error cents')
-
-    def __str__(self):
-        return f"Ваше состояние составляет {self.dollars} долларов {self.cents}  центов"
-
-t = Money (34, 77)
-
-print (t.__str__())
-
-t.dollars = 'e'
-t.cents = 33
-
-print (t.__str__())
